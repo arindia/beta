@@ -13,9 +13,9 @@ title: Pick A Region
 <hr class="major">
 <div class="col-12">
 	<h3>Top Cities</h3>
-	<dl>
+	<ul>
 		{% for city in site.data.cities %}
-		<dt><a href="{{ site.url }}/{{ city.name }}">{{ city.title }}, {{ city.state }}</a></dt>
+		<li><a href="{{ site.url }}/{{ city.name }}">{{ city.title }}, {{ city.state }}</a></li>
 		{% endfor %}
-	</dl>
+	</ul>
 </div>
