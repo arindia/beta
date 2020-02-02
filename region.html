@@ -13,8 +13,7 @@ title: Pick A Region
 <hr class="major">
 <div class="col-12">
 	<h3>Top Cities</h3>
-	<dl>
-    <dt>Nagpur</dt>
-		<dt>Mumbai</dt>
+	<dl>{% for city in site.data.cities %}
+    		<dt><a href="{{ site.url }}/{{ city.name }}">{{ city.title }}</dt>
 	</dl>
 </div>
