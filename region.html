@@ -14,6 +14,6 @@ title: Pick A Region
 <div class="col-12">
 	<h3>Top Cities</h3>
 	<dl>{% for city in site.data.cities %}
-    		<dt><a href="{{ site.url }}/{{ city.name }}">{{ city.title }}</dt>
+    		<dt><a href="{{ site.url }}/{{ city.name }}">{{ city.title }}, {{ city.state }}</dt>
 	</dl>
 </div>
