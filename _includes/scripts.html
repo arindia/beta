@@ -4,4 +4,11 @@
 <script src="{{ site.url }}/assets/js/util.js"></script>
 <script src="{{ site.url }}/assets/js/main.js"></script>
 <script src="{{ site.url }}/assets/js/simplejekyllsearch.js"></script>
-<script src="{{ site.url }}/assets/js/search.js"></script>
+
+<script>
+SimpleJekyllSearch({
+  searchInput: document.getElementById('search-input'),
+  resultsContainer: document.getElementById('results-container'),
+  json: '{{ site.url }}/assets/js/search.json'
+})
+</script>
