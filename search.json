@@ -1,0 +1,12 @@
+---
+---
+[
+  {% for city in site.data.cities %}
+    {
+
+      "title"    : "{{ city.title }}",
+      "url"      : "{{ site.url }}/{{ city.name }}"
+
+    } {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]
