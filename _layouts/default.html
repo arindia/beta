@@ -1,50 +1,38 @@
 <!DOCTYPE HTML>
 <html>
-<!-- Head -->	
-{% include head.html %}
 	
-	<body class="is-preload">
+<!-- Head -->
+{% include head.html %}
 
-		<!-- Wrapper -->
-			<div id="wrapper">
-
-				<!-- Main -->
-					<div id="main">
-						<div class="inner">
-
-<!-- Header -->
-{% include header.html %}
-                
-                {{ content }}
-                
-						</div>
-					</div>
-
-				<!-- Sidebar -->
-					<div id="sidebar">
-						<div class="inner">
-
-<!-- Search -->
-{% include search.html %}
-<!-- Menu -->
-{% include nav.html %}
-
-<!-- Recent -->
-{% include recent.html %}
-
-<!-- Contact -->
-{% include contact.html %}
-
-<!-- Footer -->
-{% include footer.html %}
-
-						</div>
-					</div>
-
+<body class="is-preload">
+	<!-- Wrapper -->
+	<div id="wrapper">
+		<!-- Main -->
+		<div id="main">
+			<div class="inner">
+				<!-- Header -->
+				{% include header.html %} 
+				{{ content }}
 			</div>
+		</div>
+		<!-- Sidebar -->
+		<div id="sidebar">
+			<div class="inner">
+				<!-- Search -->
+				{% include search.html %}
+				<!-- Menu -->
+				{% include nav.html %}
+				<!-- Recent -->
+				{% include recent.html %}
+				<!-- Contact -->
+				{% include contact.html %}
+				<!-- Footer -->
+				{% include footer.html %}
+			</div>
+		</div>
+	</div>
+	<!-- Scripts -->
+	{% include scripts.html %}
+</body>
 
-<!-- Scripts -->
-{% include scripts.html %}
-
-	</body>
 </html>
