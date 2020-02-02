@@ -1,0 +1,11 @@
+- name: nagpur
+  tite: Nagpur
+  state: Maharashtra
+
+- name: mumbai
+  tite: Mumbai
+  state: Maharashtra
+  
+- name: new-delhi
+  tite: New Delhi
+  state: Delhi
