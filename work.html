@@ -1,15 +1,43 @@
 ---
-layout: page
+layout: default
 title: Become A Freelancer
 ---
 
-<form action="mailto:you@arigato.in@yahoo.com" method="POST">
+<!-- Banner -->
+<section id="banner">
+	<div class="content">
+		<header>
+			<h1>Expand your business with Arigato</h1>
+		</header>
+		<p>Get connected with customers looking for your service</p>
+		<ul class="actions">
+			<li><a href="{{ site.url }}/region" class="button primary big">Hire</a>
+			</li>
+			<li><a href="#" class="button big">Work</a>
+			</li>
+		</ul>
+	</div>	
+	<span class="image object">
+		<img src="https://images.pexels.com/photos/7096/people-woman-coffee-meeting.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" />
+	</span>
+</section>
+
+<form action="https://formspree.io/mgekajpd" method="POST">
 	<div class="row gtr-uniform">
 		<div class="col-6 col-12-xsmall">
 			<input type="text" name="name" id="name" placeholder="Name" />
 		</div>
 		<div class="col-6 col-12-xsmall">
-			<input type="email" name="_replyto" id="email" placeholder="Email" />
+			<input type="email" name="email" id="email" placeholder="Email" />
+		</div>
+		<div class="col-6 col-12-xsmall">
+			<input type="text" name="number" id="number" placeholder="Number" />
+		</div>
+		<div class="col-6 col-12-xsmall">
+			<input type="text" name="job" id="job" placeholder="Profession" />
+		</div>
+		<div class="col-12">
+			<textarea name="bio" id="bio" placeholder="Bio" rows="3"></textarea>
 		</div>
 		<div class="col-12">
 			<ul class="actions">
