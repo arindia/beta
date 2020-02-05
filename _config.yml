@@ -1,6 +1,7 @@
-url: "https://arindia.github.io/beta"
+url: "https://arindia.github.io"
+baseurl: "/beta"
 name: Arigato
-region: India
+region: Beta
 
 permalink: pretty
 
