@@ -23,3 +23,8 @@ defaults:
       type: "posts" # previously `post` in Jekyll 2.2.
     values:
       layout: "post"
+  - scope:
+      path: ""
+      type: "freelancers"
+    values:
+      layout: "archive"
