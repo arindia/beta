@@ -3,10 +3,15 @@ baseurl: "/beta"
 name: Arigato
 region: Beta
 
-permalink: pretty
-
 twitter: "https://twitter.com/arigatoin"
 facebook: "https://www.facebook.com/arigatoindia/"
 snapchat: "#"
 instagram: "https://www.instagram.com/arigato.in/"
 medium:  "https://medium.com/@arigato"
+
+permalink: /:categories/:title
+
+collections:
+  freelancers:
+    output: true
+    permalink: /:title
