@@ -1,0 +1,28 @@
+---
+layout: default
+title: Find Freelancers Online
+---
+
+<!-- Banner -->
+<section id="banner">
+	<div class="content">
+		<header>
+			<h1>{{ page.title }}</h1>
+      <p>
+      {% assign freelancer = site.freelancers | where: 'title', page.category | first %}
+		  {% if freelancer %}
+		    <a href="{{ site.baseurl }}{{ freelancer.url }}">{{ freelancer.name }}</a>
+		  {% endif %}
+		  </p>
+		</header>
+		<p>{{ page.bio }}</p>
+    <p>{{ page.region }}</p>
+		<ul class="actions">
+			<li><a href="{{ page.hire }}" class="button big">Hire</a>
+			</li>
+		</ul>
+	</div>	
+	<span class="image object">
+		<img src="{{ page.image }}" alt="" />
+	</span>
+</section>
