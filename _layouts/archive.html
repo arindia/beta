@@ -5,20 +5,18 @@ layout: default
 <!-- Section -->
 <section>
 	<header class="major">
-		<h1>{{ page.name }}s</h1>
-    <p><code><a href="{{ site.baseurl }}">{{ site.region }}</a></code>/<code><a href="{{ site.baseurl }}{{ page.url }}">{{ page.name }}s</a></code></p>
-	</header>
+	<h1>{{ page.name }}s</h1>
+    	</header>
 	<div class="posts">
-  {% assign freelancers = site.posts | where: 'category', page.title %}
-  {% for post in freelancers %}
+  	{% assign freelancers = site.posts | where: 'category', page.title %}
+  	{% for post in freelancers %}
 		<article>
 			<a href="{{ site.baseurl }}{{ post.url }}" class="image right">
 				<img src="{{ post.image }}" alt="" />
 			</a>
 			<h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
 			<p>{{ post.region }}</p>
-			<a href="{{ post.hire }}" class="button">Hire</a>
 		</article>
-  {% endfor %}
+  	{% endfor %}
 	</div>
 </section>
