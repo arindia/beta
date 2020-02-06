@@ -1,10 +1,10 @@
 <nav id="menu">
 	<header class="major">
-		<h2>Top Cities</h2>
+		<h2>Top Categories</h2>
 	</header>
 	<ul>
-		{% for city in site.data.cities %}
-			<li><a href="{{ site.url }}/{{ city.name }}">{{ city.title }}</a>
+		{% for freelancer in site.freelancers %}
+			<li><a href="{{ site.baseurl }}{{ freelancer.url }}">{{ freelancer.name }}s</a>
 			</li>
 		{% endfor %}
 	</ul>
