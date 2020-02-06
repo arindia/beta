@@ -25,7 +25,7 @@ title: Find Freelancers Online
 {% for freelancer in site.freelancers %}
 <section>
 	<header class="major">
-		<h2><a href="{{ site.baseurl }}{{ freelancer.url }}">{{ freelancer.name }}s</a>&ensp;<i class="fas fa-long-arrow-alt-right"></i></h2>
+		<h2><a href="{{ site.baseurl }}{{ freelancer.url }}">{{ freelancer.name }}s</a></h2>
 	</header>
 	<div class="posts">
 		{% for post in site.categories.[freelancer.title] %}
