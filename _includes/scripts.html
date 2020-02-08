@@ -4,3 +4,11 @@
 <script src="{{ site.url }}/assets/js/util.js"></script>
 <script src="{{ site.url }}/assets/js/main.js"></script>
 <script src="https://unpkg.com/simple-jekyll-search/dest/simple-jekyll-search.min.js"></script>
+<!-- Configuration -->
+<script>
+SimpleJekyllSearch({
+  searchInput: document.getElementById('search-input'),
+  resultsContainer: document.getElementById('results-container'),
+  json: '{{ site.baseurl }}/search.json'
+})
+</script>
