@@ -8,7 +8,7 @@ layout: default
 	<h1>{{ page.name }}s</h1>
     	</header>
 	<div class="posts">
-  	{% assign freelancers = site.posts | where: 'category', page.title %}
+  	{% assign freelancers = site.posts | where: 'category', page.name %}
   	{% for post in freelancers %}
 		<article>
 			<a href="{{ site.baseurl }}{{ post.url }}" class="image right">
