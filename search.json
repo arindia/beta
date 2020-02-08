@@ -1,12 +1,13 @@
 ---
+layout: null
 ---
 [
-  {% for city in site.data.cities %}
+  {% for post in site.posts %}
     {
-
-      "title"    : "{{ city.title }}, {{ city.state }}",
-      "url"      : "{{ site.url }}/{{ city.name }}"
-
+      "title"    : "{{ post.title | escape }}",
+      "category" : "{{ post.category }}",
+      "url"      : "{{ site.baseurl }}{{ post.url }}",
+      "region"     : "{{ post.region }}"
     } {% unless forloop.last %},{% endunless %}
   {% endfor %}
 ]
