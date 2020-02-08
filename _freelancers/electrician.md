@@ -1,4 +1,4 @@
 ---
-title: electrician
-name: Electrician
+name: electrician
+title: Electrician
 ---
