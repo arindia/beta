@@ -14,7 +14,7 @@ permalink: /:categories/:title
 collections:
   freelancers:
     output: true
-    permalink: /:title
+    permalink: /:name
 
 defaults:
   -
