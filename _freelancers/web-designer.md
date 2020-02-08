@@ -1,4 +1,4 @@
 ---
-title: web-designer
-name: Web Designer
+name: web-designer
+title: Web Designer
 ---
