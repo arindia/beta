@@ -11,9 +11,11 @@ layout: default
   	{% assign freelancers = site.posts | where: 'category', page.name %}
   	{% for post in freelancers %}
 		<article>
+			{% if post.image %}
 			<a href="{{ site.baseurl }}{{ post.url }}" class="image right">
 				<img src="{{ post.image }}" alt="" />
 			</a>
+			{% endif %}
 			<h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
 			<p>{{ post.region }}</p>
 		</article>
