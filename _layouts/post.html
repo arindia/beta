@@ -21,20 +21,34 @@ layout: default
 			</li>
 		</ul>
 		<ul class="icons">
+			{% if page.twitter %}
 			<li><a href="{{ page.twitter }}" class="icon brands fa-twitter"><span class="label">Twitter</span></a>
 			</li>
+			{% endif %}
+			{% if page.facebook %}
 			<li><a href="{{ page.facebook }}" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a>
 			</li>
+			{% endif %}
+			{% if page.snapchat %}
 			<li><a href="{{ page.snapchat }}" class="icon brands fa-snapchat-ghost"><span class="label">Snapchat</span></a>
 			</li>
+			{% endif %}
+			{% if page.instagram %}
 			<li><a href="{{ page.instagram }}" class="icon brands fa-instagram"><span class="label">Instagram</span></a>
 			</li>
+			{% endif %}
+			{% if page.youtube %}
 			<li><a href="{{ page.youtube }}" class="icon brands fa-youtube"><span class="label">Youtube</span></a>
 			</li>
+			{% endif %}
+			{% if page.linkedin %}
 			<li><a href="{{ page.linkedin }}" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a>
 			</li>
+			{% endif %}
+			{% if page.medium %}
 			<li><a href="{{ page.medium }}" class="icon brands fa-medium-m"><span class="label">Medium</span></a>
 			</li>
+			{% endif %}
 		</ul>
 	</div>	
 	{% if page.image %}
