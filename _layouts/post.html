@@ -53,4 +53,10 @@ layout: default
 		{% if page.comments %}
 		{% include disqus.html %}
 		{% endif %}
+		
+		{% if page.image %}	
+		<span class="image object">
+		<img src="{{ page.image }}" alt="" />
+		</span>
+		{% endif %}
 </section>
