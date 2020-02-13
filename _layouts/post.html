@@ -50,5 +50,7 @@ layout: default
 			</li>
 			{% endif %}
 		</ul>
+		{% if page.comments %}
 		{% include disqus.html %}
+		{% endif %}
 </section>
