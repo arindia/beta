@@ -50,13 +50,18 @@ layout: default
 			</li>
 			{% endif %}
 		</ul>
-		{% if page.comments %}
-		{% include hyvor.html %}
-		{% endif %}
 	</div>
 		{% if page.image %}	
 		<span class="image object">
 		<img src="{{ page.image }}" alt="" />
 		</span>
 		{% endif %}
+</section>
+
+<section>
+	<div class="row">
+	{% if page.comments %}
+	{% include hyvor.html %}
+	{% endif %}	
+	</div>
 </section>
