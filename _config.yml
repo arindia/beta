@@ -28,3 +28,6 @@ defaults:
       type: "freelancers"
     values:
       layout: "archive"
+
+disqus:
+  shortname: arigatobeta
