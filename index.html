@@ -11,9 +11,13 @@ title: Find Freelancers Online
 		</header>
 		<p>Hire expert freelancers for any job</p>
 		<ul class="actions">
-			<li><a href="{{ site.url }}/region" class="button primary big">Hire</a>
-			</li>
-			<li><a href="{{ site.url }}/signup" class="button big">Work</a>
+			<li>
+			<select onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
+				<option value="">What are you looking for?</option>
+			    	{% for freelancer in site.freelancers %}
+			    	<option value="{{ site.baseurl }}{{ freelancer.url }}">{{ freelancer.title }}s</option>
+			    	{% endfor %}
+			</select>
 			</li>
 		</ul>
 	</div>	
