@@ -13,7 +13,7 @@ title: Find Freelancers Online
 		<ul class="actions">
 			<li>
 			<select onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
-				<option value="">What are you looking for?</option>
+				<option value="">Categories</option>
 			    	{% for freelancer in site.freelancers %}
 			    	<option value="{{ site.baseurl }}{{ freelancer.url }}">{{ freelancer.title }}s</option>
 			    	{% endfor %}
