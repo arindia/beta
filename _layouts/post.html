@@ -16,10 +16,6 @@ layout: default
 		</header>
 		<p>{{ page.bio }}</p>
 		<p><i class="fas fa-map-marker-alt"></i>  <b>{{ page.region }}</b></p>
-		<ul class="actions">
-			<li><a href="{{ page.hire }}" class="button big">Hire</a>
-			</li>
-		</ul>
 		<ul class="icons">
 			{% if page.twitter %}
 			<li><a href="{{ page.twitter }}" target="_blank" class="icon brands fa-twitter"><span class="label">Twitter</span></a>
@@ -49,6 +45,10 @@ layout: default
 			<li><a href="{{ page.medium }}" target="_blank" class="icon brands fa-medium-m"><span class="label">Medium</span></a>
 			</li>
 			{% endif %}
+		</ul>
+		<ul class="actions">
+			<li><a href="{{ page.hire }}" class="button primary big">Hire</a>
+			</li>
 		</ul>
 	</div>
 		{% if page.image %}	
