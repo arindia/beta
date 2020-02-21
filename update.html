@@ -1,0 +1,45 @@
+---
+layout: default
+title: Update Your Profile
+---
+
+<!-- Banner -->
+<section id="banner">
+	<div class="content">
+		<header>
+			<h1>Update Your Profile</h1>
+		</header>
+		<p>We’ll send you a verification email to confirm your update.</p>
+	</div>
+</section>
+
+<section>
+	<form method="POST" action="https://formspree.io/mgekajpd">
+		<div class="row gtr-uniform">
+			<div class="col-6 col-12-xsmall">
+				<input type="email" name="email" id="email" placeholder="Email">
+			</div>
+			<div class="col-6 col-12-xsmall">
+				<select name="update" id="update">
+					<option value="0" selected="">Select</option>
+					<option value="Gravatar">Sync with Gravatar</option>
+					<option value="Introduction">Introduction</option>
+					<option value="Region">Region</option>
+				</select>
+			</div>
+			<div class="col-12">
+				<textarea name="details" id="details" placeholder="Description" rows="4"></textarea>
+			</div>
+			<div class="col-6 col-12-xsmall">
+				<ul class="actions">
+					<li>
+						<input type="submit" value="Sign Up" class="primary">
+					</li>
+					<li>
+						<input type="reset" value="Reset">
+					</li>
+				</ul>
+			</div>
+		</div>
+	</form>
+</section>
